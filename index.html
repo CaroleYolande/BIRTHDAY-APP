@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday App tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome In Birthday Tracker</h1>
+    <h2>Sign Up here</h2>
+    <form id="signup-form">
+        <!--user enter the Name-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <!--This is the Date picker for birthday-->
+        <label for="birthdate">birthdate:</label>
+        <input type="date" id="birthdate" required />
+
+        <!--User Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <!--User password-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+
+        <!--for user with an account already-->
+        <p>Already has an account? please go to Login below.</p>
+
+        <!--The sign Up Button-->
+        <button type="submit">Sign Up</button>
+
+    </form>
+   <h2>Login here</h2>
+    <form id="Login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required /> 
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required />
+
+        <button type="submit">Login</button>
+
+    </form> 
+
+    <div id="message"></div>
+
+    <!--The logout button which should be hidden until user logs in-->
+    <button id="logout-btn" style="display:none;">Logout</button>
+
+       
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
+
+
+
+

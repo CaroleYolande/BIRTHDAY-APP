@@ -1,0 +1,89 @@
+body {
+  background: #e7f8fd
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2d0202;               
+  text-align: center;
+}
+h2 {
+  color: #444;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Make the form stand out a little */
+form {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  margin: 18px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2d506c;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 14px;
+  border: 1px solid #aac;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* to make the border becomes blue when you click in the box */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3e89df;
+  outline: none;
+  background: #cce0ed;
+}
+
+button[type="submit"] {
+  background: #1d5b15;
+  color: #fff;
+  border: none;
+  padding: 9px 0;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #357ab7;
+}
+
+p {
+  font-size: 0.97rem;
+  color: #566;
+  margin-bottom: 8px;
+}
+#message {
+  position: fixed;
+  top: 10px;   /* distance from top of the browser window */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f8ff;  /* light background so it stands out */
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  z-index: 1000;  /* make sure it appears above other content */
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
